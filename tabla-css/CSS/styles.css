@@ -1,0 +1,188 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    margin: 0;
+    padding: 0;
+    background-color: #fdf5fb; /* Color de fondo */
+    max-width: 100%;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #650f56; /* Color de fondo del menú */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none; /* Elimina viñetas */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+}
+
+nav ul li {
+    margin: 5px 10px; /* Espaciado entre elementos del menú */
+}
+
+nav ul li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina subrayado */
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #d586f7; /* Color al pasar el mouse */
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%; /* Se adapta al tamaño de la pantalla */
+    max-width: 1200px;
+    border-bottom: 2px solid #650f56; /* Línea divisoria entre secciones */
+    margin-bottom: 20px; /* Espaciado entre secciones */
+}
+
+
+/* Sombra en cada sección para resaltarlas */
+section {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px auto;
+    background: white;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    max-width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse; /* Une bordes de las celdas */
+    background-color: plum; /* Color de fondo de la tabla */
+}
+
+table, th, td {
+    border: 1px solid #151414; /* Bordes de la tabla */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #470a48; /* Color de fondo de encabezados */
+    color: white; /* Color de texto de encabezados */
+}
+
+/* Imágenes */
+section img {
+    width: 100px;
+    max-width: 100%;
+    transition: transform 0.3s; /* Efecto de transición al hacer hover */
+}
+
+section img:hover {
+    transform: scale(1.1); /* Aumenta tamaño en hover */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #650f56;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secciones */
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #650f56;
+    color: white;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 95%;
+        text-align: center;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #650f56;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 3px solid #470a48;
+}
